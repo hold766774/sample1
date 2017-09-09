@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layouts.app')
 @section('title')
     首页
 @endsection
@@ -9,7 +9,7 @@
                 <h3 class="panel-title">欢迎来到SampleApp</h3>
             </div>
             <div class="panel-body">
-                如果你还没有账号，请点击<a href="#">注册</a>
+                如果你还没有账号，请点击<a href="{{route('register')}}">注册</a>
             </div>
         </div>
     </div>
