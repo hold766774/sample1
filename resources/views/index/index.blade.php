@@ -2,7 +2,9 @@
 @section('title')
     首页
 @endsection
+
 @section('content')
+    @if(Auth::check())
     <div class="row col-md-6 col-md-offset-3">
         <div class="panel panel-primary panel_index">
             <div class="panel-heading">
@@ -13,5 +15,7 @@
             </div>
         </div>
     </div>
-
+    @else
+        @include('users.show')
+    @endif
 @endsection
